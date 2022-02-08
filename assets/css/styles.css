@@ -1,0 +1,37 @@
+.comment-box {
+  width: 500px;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+
+.comment-box input {
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+#comment-content {
+  width: 75%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.comment-box textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.comment-box button {
+  margin-bottom: 10px;
+}
+
+.comment-box ul {
+  list-style: none;
+}
+
+.menu-drop {
+  display: none;
+}
+
+.menu-drop ul{
+  list-style: none;
+}

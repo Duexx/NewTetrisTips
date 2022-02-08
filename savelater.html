@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>index</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Abel&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Allura&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Yellowtail&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css" />
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand d-xl-flex justify-content-xl-start" href="#"
+          >Tetris Tips</a
+        >
+        <div id="container-menu">
+          <!--Block containing the drop down menu-->
+          <h3 id="menu-1">Menu</h3>
+          <div class="menu-drop">
+            <ul>
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link active" href="about.html">About me</a></li>
+              <li><a class="nav-link" href="openers.html">Openers</a></li>
+              <li><a class="nav-link" href="savelater.html">Save for Later</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="openers.html">Openers</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Save for Later</a></li>
+    </ul>
+    <div class="container">
+      <h2>Saved Files</h2>
+      <!--Clear storage button here-->
+      <button onclick="clearStorage()">Clear Storage</button>
+      <div id="saved-stats">
+        <!--Scripts for retrieving innerhtmls from local storage-->
+        <script src="script.js"></script>
+        <script>
+          generateStats();
+        </script>
+      </div>
+      
+      <div id="saved-openers">
+        <script src="script.js"></script>
+        <script>
+          generateOpeners();
+        </script>
+      </div>
+      <div id="saved-game">
+        <script src="script.js"></script>
+        <script>
+          generateGame();
+        </script>
+      </div>
+    </div>
+    <section class="d-flex justify-content-xl-end newsletter-subscribe">
+      <div class="container">
+        <div class="intro">
+          <h2 class="text-center">Subscribe for Tips</h2>
+          <p class="text-center">
+            Get tips and tricks, unique videos showcasing special tech, and the
+            latest strategies.
+          </p>
+        </div>
+        <form class="d-flex justify-content-center flex-wrap" method="post">
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer-clean">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Play here</h3>
+            <ul>
+              <li><a href="#">Tetri.io</a></li>
+              <li><a href="#">JStris</a></li>
+              <li><a href="#">Nullpomino</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Useful sites</h3>
+            <ul>
+              <li><a href="#">Tafokints</a></li>
+              <li><a href="https://harddrop.com/">Harddrop</a></li>
+              <li><a href="https://four.lol/">Four.lol</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Content Creators</h3>
+            <ul>
+              <li><a href="#">Wumbo</a></li>
+              <li><a href="#">Amemiya</a></li>
+              <li><a href="#">Doremy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 item social">
+            <a href="#"><i class="icon ion-social-facebook"></i></a
+            ><a href="#"><i class="icon ion-social-twitter"></i></a
+            ><a href="#"><i class="icon ion-social-snapchat"></i></a
+            ><a href="#"><i class="icon ion-social-instagram"></i></a>
+            <p class="copyright">Company Name © 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>index</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Abel&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Allura&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Yellowtail&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css" />
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand d-xl-flex justify-content-xl-start" href="#"
+          >Tetris Tips</a
+        >
+        <div id="container-menu">
+          <!--Block containing the drop down menu-->
+          <h3 id="menu-1">Menu</h3>
+          <div class="menu-drop">
+            <ul>
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link active" href="about.html">About me</a></li>
+              <li><a class="nav-link" href="openers.html">Openers</a></li>
+              <li><a class="nav-link" href="savelater.html">Save for Later</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="openers.html">Openers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="savelater.html">Save for Later</a>
+      </li>
+    </ul>
+    <div class="container">
+      <!--save game button here-->
+      <button onclick="saveGame()">Save game details</button>
+      <h2>A Short Guide<br /></h2>
+      <div>
+        <div class="row" id="save-game">
+
+          <div
+            class="col"
+            style="
+              box-shadow: 0px 0px 1px;
+              border-style: groove;
+              border-color: var(--bs-teal);
+            "
+          >
+            <h3><em>The Game</em></h3>
+            <p style="font-family: Abel, sans-serif">
+              Alexey Pajitnov created Tetris in 1984. It held the position of
+              best selling game until overtaken by GTA 5 and Minecraft.<br />The
+              core game play is dropping blocks called&nbsp;Tetrominoes in a
+              playfield 10 cells wide and between 16 and 24 cells tall. Then
+              depending on the game mode, the objective is to: Score as many
+              points as possible, survive, or knock out other player(s).<br /><br />
+            </p>
+          </div>
+          <div
+            class="col-xxl-6"
+            style="
+              box-shadow: 0px 0px 1px;
+              border-style: groove;
+              border-color: var(--bs-teal);
+              text-align: center;
+            "
+          >
+            <img
+              class="rounded-circle img-fluid"
+              src="assets/img/Alexey_Pajitnov_-_2575833305_(crop).jpg"
+              alt="creator"
+              style="transform: scale(0.75)"
+            />
+            <figure>
+              <blockquote class="blockquote">
+                <p class="mb-0" style="font-family: Yellowtail, serif">
+                  <br />“Well Chess has been played for about 1,000 years
+                  already, and I don’t <br />see any reason why other good games
+                  – not necessarily Tetris, but any <br />other good games –
+                  should die”<br /><br />
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Alexey Pajitnov</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col"
+            style="
+              box-shadow: 0px 0px 1px;
+              border-style: groove;
+              border-color: var(--bs-blue);
+            "
+          >
+            <h3><em>Classic vs Modern</em></h3>
+            <h5><span style="text-decoration: underline">Modern</span></h5>
+            <ul style="font-family: Abel, sans-serif">
+              <li>7 Bag Randomizer</li>
+              <li>Super Rotation System</li>
+              <li>Hold Option</li>
+              <li>Hard drop</li>
+            </ul>
+            <h5><span style="text-decoration: underline">Classic</span></h5>
+            <ul style="font-family: Abel, sans-serif">
+              <li>True Random Bag</li>
+              <li>Basic Rotation System</li>
+              <li>One Piece Preview</li>
+              <li>Slow Soft Drop Only</li>
+            </ul>
+          </div>
+          <div
+            class="col"
+            style="
+              padding: 12px 12px;
+              box-shadow: 0px 0px 1px;
+              border-style: groove;
+              border-color: var(--bs-blue);
+              text-align: center;
+            "
+          >
+            <img
+              class="img-fluid"
+              src="assets/img/08-Jstris-Multiplayer.png"
+              alt="jstris_multiplayer"
+              style="transform: scale(0.75)"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col"
+            style="
+              box-shadow: 0px 0px 1px;
+              border-style: groove;
+              border-color: var(--bs-teal);
+            "
+          >
+            <h3><em>Modes</em></h3>
+            <p></p>
+            <h5><span style="text-decoration: underline">Multiplayer</span></h5>
+            <ul style="font-family: Abel, sans-serif">
+              <li>Tetris 99</li>
+              <li>Tetr.io</li>
+              <li>Puyo Puyo Tetris</li>
+              <li>Slow Soft Drop Only</li>
+            </ul>
+            <h5>
+              <span style="text-decoration: underline">Singleplayer</span>
+            </h5>
+            <ul style="font-family: Abel, sans-serif">
+              <li>Nullpomino</li>
+              <li>Tetris.com</li>
+              <li>Ultra</li>
+              <li>Dig</li>
+            </ul>
+          </div>
+          <div
+            class="col"
+            style="
+              box-shadow: 0px 0px 1px;
+              border-style: groove;
+              border-color: var(--bs-teal);
+              text-align: center;
+              padding-top: 55px;
+              padding-bottom: 55px;
+            "
+          >
+            <img src="assets/img/images.jpg" /><img
+              src="assets/img/index.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <!--Like button here-->
+      <i onclick="likeFunction(this)" class="fa fa-thumbs-up">
+        Do you like this content?</i
+      >
+      <section class="d-flex justify-content-xl-end newsletter-subscribe">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center">Subscribe for Tips</h2>
+            <p class="text-center">
+              Get tips and tricks, unique videos showcasing special tech, and
+              the latest strategies.
+            </p>
+          </div>
+          <form class="d-flex justify-content-center flex-wrap" method="post">
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer-clean">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Play here</h3>
+            <ul>
+              <li><a href="#">Tetri.io</a></li>
+              <li><a href="#">JStris</a></li>
+              <li><a href="#">Nullpomino</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Useful sites</h3>
+            <ul>
+              <li>Harddrop</li>
+              <li><a href="#">Tafokints</a></li>
+              <li><a href="#">Four.lol</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Content Creators</h3>
+            <ul>
+              <li><a href="#">Wumbo</a></li>
+              <li><a href="#">Amemiya</a></li>
+              <li><a href="#">Doremy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 item social">
+            <a href="#"><i class="icon ion-social-facebook"></i></a
+            ><a href="#"><i class="icon ion-social-twitter"></i></a
+            ><a href="#"><i class="icon ion-social-snapchat"></i></a
+            ><a href="#"><i class="icon ion-social-instagram"></i></a>
+            <p class="copyright">Company Name © 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>
