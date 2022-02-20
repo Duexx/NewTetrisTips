@@ -35,3 +35,17 @@
 .menu-drop ul{
   list-style: none;
 }
+
+.save-btn {
+  margin: 5px;
+  background-color: #00bfff;
+  color: white;
+  outline: none;
+  border: 2px solid #00bfff;
+  transition-duration: 0.3s;
+}
+
+.save-btn:hover {
+  background-color: white;
+  color: black;
+}
